@@ -31,3 +31,5 @@ EOF
 #reload bashrc file
 source ~/.bashrc
 
+
+# wget cd~ && https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/.utils.sh
