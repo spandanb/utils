@@ -32,4 +32,4 @@ EOF
 source ~/.bashrc
 
 
-# wget cd~ && https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/.utils.sh
+# wget cd ~ && https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/.utils.sh
