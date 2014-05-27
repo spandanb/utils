@@ -1,12 +1,10 @@
 #!/bin/bash
 
 #Create bash_aliases file
-bash_aliases="~/.bash_aliases"
-if [ -f $bash_aliases ]; then
-    . $bash_aliases
-else
+bash_aliases="/home/ubuntu/.bash_aliases"
+if [ ! -f $bash_aliases ]; then
     echo "Creating $bash_aliases"
-    echo "" > $bash_aliases
+    touch $bash_aliases
 fi
 
 #Create git completion file 
@@ -19,7 +17,7 @@ fi
 cat > $bash_aliases << "EOF"
 #!/bin/bash
 
-alias reload="source ~/.bashrc"
+alias reld="source ~/.bashrc"
 alias profile="vim ~/.bash_aliases"
 
 #git helper aliases
@@ -31,6 +29,6 @@ EOF
 
 #reload bashrc file
 source ~/.bashrc
+source $bash_aliases
 
-
-# cd ~ && wget https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/utils.sh
+# cd ~ && wget -q https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/utils.sh
