@@ -6,7 +6,7 @@ if [ -f $bash_aliases ]; then
     . $bash_aliases
 else
     echo "Creating $bash_aliases"
-    touch $bash_aliases
+    echo "" > $bash_aliases
 fi
 
 #Create git completion file 
