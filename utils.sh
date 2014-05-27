@@ -5,6 +5,7 @@ bash_aliases="~/.bash_aliases"
 if [ -f $bash_aliases ]; then
     . $bash_aliases
 else
+    echo "Creating $bash_aliases"
     touch $bash_aliases
 fi
 
@@ -32,4 +33,4 @@ EOF
 source ~/.bashrc
 
 
-# wget cd ~ && https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/.utils.sh
+# cd ~ && wget https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/utils.sh
