@@ -28,8 +28,15 @@ alias gb="git branch -a"
 alias gc="git checkout s-havana"
 EOF
 
+if [[ ! -f  ~/.vimrc ]] ; then
+    cd ~
+    wget -O ~/.vimrc http://amix.dk/vim/vimrc.txt
+fi
+
 #reload bashrc file
 source $bashrc
 source $bash_aliases
+
+
 
 # cd ~ && wget -q https://raw.githubusercontent.com/spandanb/utils/master/utils.sh && chmod +x utils.sh && ./utils.sh && rm ~/utils.sh
