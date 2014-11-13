@@ -1,0 +1,21 @@
+screen -t shell0
+select 0
+screen -t shell1
+#select 1
+#stuff "cat .screen_cmds ^M"
+
+#altscreen on
+#term screen-256color
+#bind ',' prev
+#bind '.' next
+
+
+#autodetach on
+startup_message off
+hardstatus alwayslastline
+#shelltitle 'bash'
+
+#Some status lines
+#hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%c:%s%{-}'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+hardstatus string '%{gk}[%{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= w}%?%+Lw%?%? %{g}][%{d}%l%{g}][ %{= w}%Y/%m/%d %0C:%s%a%{g} ]%{W}'
