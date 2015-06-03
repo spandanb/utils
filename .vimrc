@@ -28,6 +28,9 @@ let g:mapleader = ","
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Suppresses "No write since last change (add ! to override)
+set hidden
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
