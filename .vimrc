@@ -26,7 +26,10 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
+"The following doesn't work
+"map <leader>pp :setlocal paste!<cr>
+nnoremap <leader>pp :set invpaste paste?<cr>
+set pastetoggle=<leader>pp
 
 " Suppresses "No write since last change (add ! to override)
 set hidden
