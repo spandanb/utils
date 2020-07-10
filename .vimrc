@@ -7,8 +7,8 @@
 set history=700
 
 " Replace tab with 4 spaces
-set tabstop=4 
-set shiftwidth=4 
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 set autoindent
@@ -34,6 +34,14 @@ set pastetoggle=<leader>pp
 " Suppresses "No write since last change (add ! to override)
 set hidden
 
+
+" disable appending newline when file is saved
+" this is problematic on windows and a necessity on *nix
+" See: https://stackoverflow.com/questions/729692
+" See: https://stackoverflow.com/questions/1050640
+" enable on windows
+" set nofixendofline
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -55,7 +63,7 @@ set cmdheight=2
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
