@@ -34,7 +34,6 @@ set pastetoggle=<leader>pp
 " Suppresses "No write since last change (add ! to override)
 set hidden
 
-
 " disable appending newline when file is saved
 " this is problematic on windows and a necessity on *nix
 " See: https://stackoverflow.com/questions/729692
@@ -42,6 +41,9 @@ set hidden
 " enable on windows
 " set nofixendofline
 
+" show tab chars and trailing spaces
+set list
+set listchars=tab:>-,trail:.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
